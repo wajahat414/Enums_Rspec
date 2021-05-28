@@ -1,4 +1,4 @@
-# rubocop: disable Layout/LineLength, Metrics/BlockLength
+# rubocop: disable Layout/LineLength
 require './enums'
 describe Enumerable do
   describe '#my_each' do
@@ -74,4 +74,4 @@ describe Enumerable do
     end
   end
 end
-# rubocop: enable Layout/LineLength, Metrics/BlockLength
+# rubocop: enable Layout/LineLength

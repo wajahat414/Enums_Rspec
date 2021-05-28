@@ -1,3 +1,4 @@
+# rubocop: disable Layout/LineLength, Metrics/BlockLength
 require './enums'
 describe Enumerable do
   describe '#my_each' do
@@ -19,7 +20,7 @@ describe Enumerable do
   end
   describe '#my_select' do
     it 'iterates through all elements of array and returns only those values which matches the condition' do
-      expect([1, 2, 3, 4, 5].my_select { |num| num.even? }).to eql([2, 4])
+      expect([1, 2, 3, 4, 5].my_select(&:even?)).to eql([2, 4])
     end
   end
   describe '#my_all?' do
@@ -73,3 +74,4 @@ describe Enumerable do
     end
   end
 end
+# rubocop: enable Layout/LineLength, Metrics/BlockLength

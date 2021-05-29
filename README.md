@@ -16,7 +16,7 @@ Enumerable Methods:
 
 
 
-![screenshot]()
+![screenshot](./screenshot.png)
 
 
 ## Built With
@@ -30,14 +30,28 @@ Enumerable Methods:
 
 **To get a local copy up and running follow these simple steps.**
 
+```
+$ git clone https://github.com/wajahat414/Enums_Rspec.git
+$ cd ruby-enumerables
+```
+Don't know anything about git? Checkout this 👉🏼 [Getting Started With Git](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6?gi=f8ce126417c7)
+
+To examine the program's results you can run this command:
+
+```
+$ irb ./test.rb
+```
+You can also use [Online Ruby Compiler](https://www.tutorialspoint.com/execute_ruby_online.php). Just copy the contents of test.rb there and it will execute the program for you.
+
+Testing With Rspec
+- Test cases have been written carefully to make sure the public methods works as expected
+- From the Terminal run the command
+$ rspec
+
 ### Prerequisites
 
 -Windows or Linux machine 
 -Web browser other than Internet Explorer
-
-### Setup
-
--Download the files to the same folder and run index.html
 
 ### Install
 
@@ -59,8 +73,8 @@ The project will be deployed to https://<wajahat414>.github.io/<>/
 👤 **Author**
 
 - GitHub: [@wajahat414](https://github.com/wajahat414)
-- Twitter: [@#](https://#)
-- LinkedIn: [#](https://#)
+- Twitter: [@wajahat414](https://twitter.com/wajahat414)
+- linkedIn: [@wajahat414](https://linkedin.com/wajahat414)
 
 ## 🤝 Contributing
 
@@ -80,3 +94,4 @@ Give a ⭐️ if you like this project
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+![](https://img.shields.io/badge/Microverse-blueviolet)

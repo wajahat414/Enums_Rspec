@@ -6,7 +6,7 @@ describe Enumerable do
       array = [1, 2, 3]
       expect(array.my_each { |num| print num }).to eql(array.each { |num| print num })
       expect((1..5).my_each { |value| print value }).to eql(1..5)
-      expect(array.my_each { |num| print num }).not_to eql([1,2])
+      expect(array.my_each { |num| print num }).not_to eql([1, 2])
       expect((1..5).my_each { |value| print value }).not_to eql(1..6)
       last = 0
       (1..5).my_each { |value| last = value }
@@ -19,14 +19,14 @@ describe Enumerable do
       array = []
       [10, 20, 30].my_each_with_index { |num, i| array[i] = num }
       expect(array).to eql([10, 20, 30])
-      expect(array).not_to eql([10, 20, 30,40])
+      expect(array).not_to eql([10, 20, 30, 40])
     end
   end
   describe '#my_select' do
     it 'iterates through all elements of array and returns only those values which matches the condition' do
       expect([1, 2, 3, 4, 5].my_select(&:even?)).to eql([2, 4])
-      expect([1, 2, 3, 4, 5].my_select(&:odd?)).to eql([1,3,5])
-      expect([1, 2, 3, 4, 5].my_select(&:odd?)).not_to eql([1,3,4])
+      expect([1, 2, 3, 4, 5].my_select(&:odd?)).to eql([1, 3, 5])
+      expect([1, 2, 3, 4, 5].my_select(&:odd?)).not_to eql([1, 3, 4])
       expect([1, 2, 3, 4, 5].my_select(&:even?)).not_to eql([3, 5])
     end
   end
@@ -83,14 +83,12 @@ describe Enumerable do
       end
       expect(longest).to eql('sheep')
       expect(longest).not_to eql('cat')
-      
-
     end
   end
   describe '#my_map' do
     it 'Returns a new array with the results of running block once for every element in enum.' do
       expect((1..4).my_map { |i| i * i }).to eql([1, 4, 9, 16])
-      expect((1..4).my_map { |i| i * i }).not_to eql([1, 4, 9, 16,2])
+      expect((1..4).my_map { |i| i * i }).not_to eql([1, 4, 9, 16, 2])
     end
   end
 end
